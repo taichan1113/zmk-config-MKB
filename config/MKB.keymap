@@ -17,6 +17,9 @@
 #define DEVICE 4
 #define MOUSE 5
 
+// #define CLICK_L 28
+// #define CLICK_M 27
+
 &mt {
     flavor = "hold-preferred";
 };
@@ -42,14 +45,14 @@
         };
     };
 
-    // combos{
-    //     compatible = "zmk,combos";
-    //     combo_rclck {
-    //         timeout-ms = <100>;
-    //         key-positions = <CLICK_L CLICK_M>;
-    //         bindings = <&mkp RCLK>;
-    //     };
-    // };
+    combos{
+        // compatible = "zmk,combos";
+        // combo_rclck {
+        //     timeout-ms = <100>;
+        //     key-positions = <CLICK_L CLICK_M>;
+        //     bindings = <&mkp RCLK>;
+        // };
+    };
 
     behaviors {
         // Japanese settings
@@ -135,15 +138,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        pmtc: positional_mod_tap_click_L {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <CLICK_L>;
-        };
+        // pmtc: positional_mod_tap_click_L {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "hold-preferred";
+        //     tapping-term-ms = <1000>;
+        //     quick-tap-ms = <200>;
+        //     bindings = <&kp>, <&kp>;
+        //     hold-trigger-key-positions = <CLICK_L>;
+        // };
         ltt: lt-tap-preferred {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -290,105 +293,40 @@
 			>;
 		};
 		
-		mouse_layer {
-			label="Mouse";
+		function_layer {
+			label="Fcn";
 			bindings = <
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &mkp MB1         &mkp MB3         &mkp MB2         &trans
-&trans            &trans           &trans                            &trans           &trans               &trans            &trans                            &trans           &trans           &trans
-//<              ^                 +                _                >                                     <                 ^                +                _                >
-&kp RIGHT        &kp DOWN          &kp UP           &kp LEFT         &kp ENTER                             &kp PG_UP         &kp END          &kp HOME         &kp PG_DN        &kp ENTER
+&kp F1 &trans &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &kp F12
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans
+&trans &trans &trans        &trans &trans &trans &trans        &trans &trans  &trans
+//  >            v         ^          <         _                   ^         >         <        ^         _
+&kp RIGHT    &kp DOWN  &kp UP     &kp LEFT  &trans              &kp PG_UP &kp END   &kp HOME &kp PG_DN &trans
 			>;
 		};
 		
-		scroll_layer {
-			label="Scr";
-			bindings = <
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
-&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &mkp MB1         &mkp MB3         &mkp MB2         &trans
-&trans            &trans           &trans                            &trans           &trans               &trans            &trans                            &trans           &trans           &trans
-//<              ^                 +                _                >                                     <                 ^                +                _                >
-&kp RIGHT        &kp DOWN          &kp UP           &kp LEFT         &kp ENTER                             &kp PG_UP         &kp END          &kp HOME         &kp PG_DN        &kp ENTER
-			>;
-		};
-		
-		bt_layer {
-			label="BT";
+		device_layer {
+			label="Device";
 			bindings = <
 &bt BT_CLR        &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4         &bt BT_CLR_ALL    &trans           &trans           &trans           &trans           &trans
 &trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
 &trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
 &trans            &trans           &trans                            &trans           &trans               &trans            &trans                            &trans           &trans           &trans
-//<              ^                 +                _                >                                     <                 ^                +                _                >
-&kp RIGHT        &kp DOWN          &kp UP           &kp LEFT         &kp ENTER                             &kp PG_UP         &kp END          &kp HOME         &kp PG_DN        &kp ENTER
+//  >            v         ^          <         _                   ^         >         <        ^         _
+&kp RIGHT    &kp DOWN  &kp UP     &kp LEFT  &trans              &kp PG_UP &kp END   &kp HOME &kp PG_DN &trans
 			>;
 		};
-	};
 
-    behaviors {
-		// toJIS: toJIS {
-		// 	compatible = "zmk,behavior-hold-tap";
-		// 	#binding-cells = <2>;
-		// 	tapping-term-ms = <200>;
-		// 	quick-tap-ms = <0>;
-		// 	bindings = <&tog_ls>, <&kp>;
-		// };
-	// 	leader1: leader1 {
-    //         compatible = "zmk,behavior-leader-key";
-    //         #binding-cells = <0>;
-    //         leftdown { sequence = <F14 F15>; bindings = <&kp PG_DN>; };
-    //         out { sequence = <O U T>; bindings = <&out OUT_TOG>; };
-    //     };
-    //     leader2: leader2 {
-    //         compatible = "zmk,behavior-leader-key";
-    //         #binding-cells = <0>;
-    //         leftup   { sequence = <F14 F13>; bindings = <&kp PG_UP>; };
-    //     };
-    //     leader3: leader3 {
-    //         compatible = "zmk,behavior-leader-key";
-    //         #binding-cells = <0>;
-    //         rightdown { sequence = <F17 F18>; bindings = <&kp END>; };
-    //     };
-    //     leader4: leader4 {
-    //         compatible = "zmk,behavior-leader-key";
-    //         #binding-cells = <0>;
-    //         rightup   { sequence = <F17 F16>; bindings = <&kp HOME>; };
-    //     };
-	// 	mF13: mF13 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F13>
-    //                  , <&leader1>;
-    //     };
-    //     mF14: mF14 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F14>;
-    //     };
-    //     mF15: mF15 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F15>
-    //                  , <&leader2>;
-    //     };
-    //     mF16: mF16 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F16>
-    //                 , <&leader3>;
-    //     };
-    //     mF17: mF17 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F17>;
-    //     };
-    //     mF18: mF18 {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings = <&macro_tap &kp F18>
-    //                 , <&leader4>;
-    //     };
+        scroll_layer {
+			label="Scr";
+			bindings = <
+&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
+&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
+&trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
+&trans            &trans           &trans                            &trans           &trans               &trans            &trans                            &trans           &trans           &trans
+//  >            v         ^          <         _                   ^         >         <        ^         _
+&kp RIGHT    &kp DOWN  &kp UP     &kp LEFT  &trans              &kp PG_UP &kp END   &kp HOME &kp PG_DN &trans
+			>;
+		};
 	};
 };
