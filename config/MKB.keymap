@@ -303,6 +303,7 @@
 //  >            v         ^          <         _                   ^         >         <        ^         _
 &kp RIGHT    &kp DOWN  &kp UP     &kp LEFT  &trans              &kp PG_UP &kp END   &kp HOME &kp PG_DN &trans
 			>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
 		};
 		
 		device_layer {
