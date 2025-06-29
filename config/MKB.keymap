@@ -262,7 +262,7 @@
 &lth FCN TAB    &plt FCN Q  &kp W   &kp E     &kp R             &kp T                 &kp Y         &kp U           &kp I            &kp O      &kp P     &minus
 &mth LCTRL RET  &kp A       &kp S   &kp D     &kp F             &kp G                 &kp H         &kp J           &kp K            &kp L      &semi     &sqtmod LALT 0
 &mth LSHIFT ESC &kp Z       &kp X   &kp C     &kp V             &kp B                 &kp N         &kp M           &kp COMMA        &kp DOT    &kp SLASH &kp LGUI
-&trans          &trans      &trans            &lth SYMBOL SPACE &lth NAVNUM BSPC      &mt LALT DEL  &mt LSHFT RET                    &trans     &trans    &trans 
+&kp LWIN        &trans      &trans            &lth SYMBOL SPACE &lth NAVNUM BSPC      &mt LALT DEL  &mt LSHFT RET                    &trans     &trans    &trans 
 //  >               v           ^       <         _                                       ^             >               <                ^          _
 &kp RIGHT       &kp DOWN    &kp UP  &kp LEFT  &trans                                  &kp PG_UP     &kp END         &kp HOME         &kp PG_DN  &trans
 			>;
@@ -309,7 +309,7 @@
 		device_layer {
 			label="Device";
 			bindings = <
-&bt BT_CLR        &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4         &bt BT_SEL 5      &bt BT_SEL 6     &bt BT_SEL 7     &bt BT_SEL 8     &bt BT_SEL 9     &bt BT_CLR
+&trans            &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4         &bt BT_SEL 5      &bt BT_SEL 6     &bt BT_SEL 7     &bt BT_SEL 8     &bt BT_SEL 9     &bt BT_CLR
 &trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
 &trans            &trans           &trans           &trans           &trans           &trans               &trans            &trans           &trans           &trans           &trans           &trans
 &trans            &trans           &trans                            &trans           &trans               &trans            &trans                            &trans           &trans           &trans
