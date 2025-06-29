@@ -37,7 +37,7 @@ layers:
   - DOT
   - SLASH
   - LGUI
-  - {t: ▽, type: trans}
+  - LWIN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: SPACE, h: Sym}
@@ -229,7 +229,7 @@ layers:
   - PG DN
   - {t: ▽, type: trans}
   Device:
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
