@@ -41,12 +41,12 @@ layers:
   - LGUI
   - Ctl+Alt+TAB
   - {t: SPACE, h: Sym}
-  - {t: BSPC, h: Nav/Num}
-  - {t: DEL, h: LALT}
+  - {t: DEL, h: Nav/Num}
+  - {t: BSPC, h: LALT}
   - {t: RET, h: LSHFT}
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Mouse, h: toggle}
   - '&mkp MB5'
   - Ctl+TAB
   - Ctl+Sft+TAB
@@ -104,15 +104,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT
-  - DOWN
-  - UP
-  - LEFT
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
   - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
+  - UP
+  - RIGHT
+  - LEFT
+  - DOWN
   - {t: ▽, type: trans}
   Nav/Num:
   - CAPSLOCK
@@ -161,15 +161,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT
-  - DOWN
-  - UP
-  - LEFT
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
   - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
+  - UP
+  - RIGHT
+  - LEFT
+  - DOWN
   - {t: ▽, type: trans}
   Fcn:
   - {t: F1, type: held}
@@ -218,15 +218,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT
-  - DOWN
-  - UP
-  - LEFT
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
   - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
+  - UP
+  - RIGHT
+  - LEFT
+  - DOWN
   - {t: ▽, type: trans}
   Device:
   - {t: ▽, type: trans}
@@ -275,70 +275,70 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT
-  - DOWN
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
+  - {t: ▽, type: trans}
   - UP
-  - LEFT
-  - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
-  - {t: ▽, type: trans}
-  Scr:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - RIGHT
-  - DOWN
-  - UP
   - LEFT
+  - DOWN
   - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
+  Mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
+  - {t: ▽, type: trans}
+  - UP
+  - RIGHT
+  - LEFT
+  - DOWN
   - {t: ▽, type: trans}
