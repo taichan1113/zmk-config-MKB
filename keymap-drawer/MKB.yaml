@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: SEMI, s: SQT}
-  - {t: Sft+7, h: LALT, s: Sft+2}
+  - {t: Sft+7, s: Sft+2}
   - {t: ESC, h: LSHIFT}
   - Z
   - X
@@ -37,25 +37,25 @@ layers:
   - DOT
   - SLASH
   - LGUI
-  - LWIN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ESC, h: LALT}
+  - LGUI
+  - Ctl+Alt+TAB
   - {t: SPACE, h: Sym}
   - {t: BSPC, h: Nav/Num}
   - {t: DEL, h: LALT}
   - {t: RET, h: LSHFT}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp MB5'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
+  - '&mkp MB4'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RIGHT
-  - DOWN
   - UP
+  - RIGHT
   - LEFT
-  - {t: ▽, type: trans}
-  - PG UP
-  - END
-  - HOME
-  - PG DN
+  - DOWN
   - {t: ▽, type: trans}
   Sym:
   - Sft+EQUAL
