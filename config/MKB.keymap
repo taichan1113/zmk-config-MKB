@@ -323,7 +323,7 @@
 			label="Mouse";
 			bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK                     &mkp RCLK  &mkp LCLK  &mkp MCLK &trans  &mt SYMBOL &trans
+&trans  &trans  &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK                     &mkp RCLK  &mkp LCLK  &mkp MCLK &trans  &mo SYMBOL &trans
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans  &trans                              &trans  &trans          &trans  &trans  &trans
 //  >               v             ^                 <         _                             ^             >               <         v                _
