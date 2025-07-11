@@ -308,7 +308,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - {t: ▽, type: trans}
-  - '&mt 1'
+  - Sym
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
