@@ -15,10 +15,10 @@ include:
     snippet: zmk-usb-logging studio-rpc-usb-uart
     artifact-name: MKB_L_MODULE_ENC
 
-  - board: seeeduino_xiao_ble
-    shield: MKB_L_RZT rgbled_adapter nice_oled
-    snippet: zmk-usb-logging studio-rpc-usb-uart
-    artifact-name: MKB_L_MODULE_RZT
+  # - board: seeeduino_xiao_ble
+  #   shield: MKB_L_RZT rgbled_adapter nice_oled
+  #   snippet: zmk-usb-logging studio-rpc-usb-uart
+  #   artifact-name: MKB_L_MODULE_RZT
 
 
   - board: seeeduino_xiao_ble
@@ -36,10 +36,10 @@ include:
     snippet: zmk-usb-logging studio-rpc-usb-uart
     artifact-name: MKB_R_MODULE_ENC
 
-  - board: seeeduino_xiao_ble
-    shield: MKB_R_RZT rgbled_adapter nice_oled
-    snippet: zmk-usb-logging studio-rpc-usb-uart
-    artifact-name: MKB_R_MODULE_RZT
+  # - board: seeeduino_xiao_ble
+  #   shield: MKB_R_RZT rgbled_adapter nice_oled
+  #   snippet: zmk-usb-logging studio-rpc-usb-uart
+  #   artifact-name: MKB_R_MODULE_RZT
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
