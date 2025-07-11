@@ -235,8 +235,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '5'}
+  - {t: BT, h: '6'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,7 +308,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mt 1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -337,8 +337,8 @@ layers:
   - Ctl+Sft+TAB
   - '&mkp MB4'
   - {t: ▽, type: trans}
-  - UP
+  - '&msc SCRL_UP'
   - RIGHT
   - LEFT
-  - DOWN
+  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
