@@ -263,7 +263,7 @@
 &lth FCN TAB    &plt FCN Q    &kp W   &kp E     &kp R             &kp T                 &kp Y         &kp U           &kp I            &kp O      &kp P     &minus
 &mth LCTRL RET  &kp A         &kp S   &kp D     &kp F             &kp G                 &kp H         &kp J           &kp K            &kp L      &semi     &sqt
 &mth LSHIFT ESC &kp Z         &kp X   &kp C     &kp V             &kp B                 &kp N         &kp M           &kp COMMA        &kp DOT    &kp SLASH &kp LGUI
-&mt LALT ESC    &kp LGUI      &kp LC(LA(TAB))   &lth SYMBOL SPACE &lth NAVNUM DEL       &mt LALT BSPC &mt LSHFT RET                    &trans     &trans    &tog MOUSE
+&mt LALT ESC    &kp LGUI      &kp LC(LA(TAB))   &lth SYMBOL SPACE &lth NAVNUM BSPC      &mt LALT DEL  &mt LSHFT RET                    &trans     &trans    &tog MOUSE
 //  >               v             ^                 <         _                             ^             >               <                v          _
 &mkp MB5        &kp LC(TAB)   &kp LC(LS(TAB))   &mkp MB4  &trans                        &kp UP        &kp RIGHT       &kp LEFT         &kp DOWN   &trans
 			>;
