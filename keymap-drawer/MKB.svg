@@ -314,13 +314,13 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(350, 210)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DEL</text>
+<text x="0" y="0" class="key tap">BSPC</text>
 <a href="#NavNum">
 <text x="0" y="24" class="key hold layer-activator">Nav/Num</text>
 </a></g>
 <g transform="translate(602, 210)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BSPC</text>
+<text x="0" y="0" class="key tap">DEL</text>
 <text x="0" y="24" class="key hold">LALT</text>
 </g>
 <g transform="translate(658, 196)" class="key keypos-42">

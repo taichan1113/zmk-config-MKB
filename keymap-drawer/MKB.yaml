@@ -41,8 +41,8 @@ layers:
   - LGUI
   - Ctl+Alt+TAB
   - {t: SPACE, h: Sym}
-  - {t: DEL, h: Nav/Num}
-  - {t: BSPC, h: LALT}
+  - {t: BSPC, h: Nav/Num}
+  - {t: DEL, h: LALT}
   - {t: RET, h: LSHFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
