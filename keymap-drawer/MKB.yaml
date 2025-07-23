@@ -48,8 +48,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: Mouse, h: toggle}
   - '&mkp MB5'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - Ctl+TAB
+  - Ctl+Sft+TAB
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
