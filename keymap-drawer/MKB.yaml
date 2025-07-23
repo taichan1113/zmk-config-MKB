@@ -37,14 +37,14 @@ layers:
   - DOT
   - SLASH
   - LGUI
-  - {t: ESC, h: LALT}
+  - ESC
   - LGUI
-  - Ctl+Alt+TAB
+  - LALT
   - {t: SPACE, h: Sym}
   - {t: BSPC, h: Nav/Num}
   - LALT
   - {t: RET, h: LSHFT}
-  - {t: ▽, type: trans}
+  - {t: Sym, h: toggle}
   - {t: ▽, type: trans}
   - {t: Mouse, h: toggle}
   - '&mkp MB5'
