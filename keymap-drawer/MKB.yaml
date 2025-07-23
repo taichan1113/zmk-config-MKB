@@ -42,14 +42,14 @@ layers:
   - Ctl+Alt+TAB
   - {t: SPACE, h: Sym}
   - {t: BSPC, h: Nav/Num}
-  - {t: DEL, h: LALT}
+  - LALT
   - {t: RET, h: LSHFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Mouse, h: toggle}
   - '&mkp MB5'
-  - Ctl+TAB
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
@@ -105,8 +105,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB5'
-  - Ctl+TAB
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
@@ -162,8 +162,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB5'
-  - Ctl+TAB
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
@@ -219,8 +219,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB5'
-  - Ctl+TAB
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
@@ -276,8 +276,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB5'
-  - Ctl+TAB
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - UP
