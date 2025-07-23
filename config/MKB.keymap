@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 360
 
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -256,7 +256,7 @@
 &mth LSHIFT ESC &kp Z         &kp X   &kp C     &kp V             &kp B                 &kp N         &kp M           &kp COMMA        &kp DOT     &kp SLASH &kp LGUI
 &kp  ESC        &kp LGUI      &kp LALT   &lth SYMBOL SPACE &lth NAVNUM BSPC      &kp LALT      &mt LSHFT RET                    &tog SYMBOL &trans    &tog MOUSE
 //  >               v             ^                 <         _                             ^             >               <                v          _
-&mkp MB5        &msc SCRL_DOWN &msc SCRL_UP   &mkp MB4  &trans                        &kp UP        &kp RIGHT       &kp LEFT         &kp DOWN   &trans
+&mkp MB5        &kp LC(TAB)   &kp LC(LS(TAB))   &mkp MB4  &trans                        &kp UP        &kp RIGHT       &kp LEFT         &kp DOWN   &trans
 			>;
             sensor-bindings = <&vol_alt_tab>;
 		};
