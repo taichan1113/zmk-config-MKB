@@ -28,7 +28,7 @@
 
 &msc { 
     delay-ms = <0>;
-    trigger-period-ms = <10>; // default:16
+    trigger-period-ms = <16>; // default:16
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
     time-to-max-speed-ms = <300>;
