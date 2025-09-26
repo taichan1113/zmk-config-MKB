@@ -6,6 +6,7 @@
 
 &adc {
 	status = "okay";
+    oversampling = <0>; 
 };
 
 / {
@@ -23,24 +24,26 @@
         x-ch {
             io-channels = <&adc 2>;
             mv-mid = <1650>;
-            mv-min-max = <1650>;
-            mv-deadzone = <150>;
-            scale-multiplier = <1000>;
-            scale-divisor = <1650>;
-            invert;
+            mv-min-max = <1600>;
+            mv-deadzone = <180>;
+            scale-multiplier = <2>;
+            scale-divisor = <3>;
+            // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_X>;
+            report-on-change-only
         };
         y-ch {
             io-channels = <&adc 3>;
             mv-mid = <1650>;
-            mv-min-max = <1650>;
-            mv-deadzone = <150>;
-            scale-multiplier = <1000>;
-            scale-divisor = <1650>;
-            invert;
+            mv-min-max = <1600>;
+            mv-deadzone = <180>;
+            scale-multiplier = <2>;
+            scale-divisor = <3>;
+            // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_Y>;
+            report-on-change-only
         };
     };
     
@@ -51,7 +54,7 @@
         
         scroll {
             layers = <0>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
 };
