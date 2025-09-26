@@ -40,7 +40,7 @@
             mv-deadzone = <180>;
             scale-multiplier = <2>;
             scale-divisor = <30>;
-            invert;
+            // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_Y>;
             report-on-change-only;
@@ -53,10 +53,10 @@
         device = <&anin0>;
         // input-processors = <&zip_xy_to_scroll_mapper>;
         
-        // scroll {
-        //     layers = <0>;
-        //     input-processors = <&zip_xy_to_scroll_mapper>;
-        // };
+        scroll {
+            layers = <0>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
