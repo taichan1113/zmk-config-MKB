@@ -6,7 +6,7 @@
 
 &adc {
 	status = "okay";
-    // oversampling = <0>; 
+    oversampling = <0>; 
 };
 
 / {
@@ -31,7 +31,7 @@
             // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_X>;
-            report-on-change-only
+            report-on-change-only;
         };
         y-ch {
             io-channels = <&adc 3>;
@@ -43,7 +43,7 @@
             // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_Y>;
-            report-on-change-only
+            report-on-change-only;
         };
     };
     
