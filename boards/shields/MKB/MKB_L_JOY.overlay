@@ -6,7 +6,7 @@
 
 &adc {
 	status = "okay";
-    oversampling = <0>; 
+    // oversampling = <0>; 
 };
 
 / {
