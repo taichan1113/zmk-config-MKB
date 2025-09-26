@@ -6,44 +6,44 @@
 
 &adc {
 	status = "okay";
-};
-
-&left_encoder {
-    a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <3>;
-    status = "okay";
-};
-
-&sensors {
-    triggers-per-rotation = <1>;
+    // oversampling = <0>; 
 };
 
 / {
+   left_encoder: encoder_left {
+      compatible = "alps,ec11";
+      a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      steps = <24>;
+      status = "disabled";
+   };
+
     anin0: analog_input_0 {
         compatible = "zmk,analog-input";
         sampling-hz = <100>;
         x-ch {
             io-channels = <&adc 2>;
-            mv-mid = <1600>;
+            mv-mid = <1650>;
             mv-min-max = <1600>;
-            mv-deadzone = <88>;
-            scale-multiplier = <1>;
-            scale-divisor = <800>;
-            invert;
+            mv-deadzone = <180>;
+            scale-multiplier = <2>; //2
+            scale-divisor = <30>;
+            // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_X>;
+            report-on-change-only;
         };
         y-ch {
             io-channels = <&adc 3>;
-            mv-mid = <1600>;
+            mv-mid = <1650>;
             mv-min-max = <1600>;
-            mv-deadzone = <88>;
-            scale-multiplier = <1>;
-            scale-divisor = <800>;
+            mv-deadzone = <180>;
+            scale-multiplier = <2>;
+            scale-divisor = <30>;
             invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_Y>;
+            report-on-change-only;
         };
     };
     
@@ -51,14 +51,15 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&anin0>;
+        // input-processors = <&zip_xy_to_scroll_mapper>;
         
-        layer0 {
-            layers = <0>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
-        layer1 {
-            layers = <1>;
-            input-processors = <&zip_xy_scaler 1 16>;
-        };
+        // scroll {
+        //     layers = <0>;
+        //     input-processors = <&zip_xy_to_scroll_mapper>;
+        // };
     };
+};
+
+&left_encoder {
+    status = "okay";
 };
